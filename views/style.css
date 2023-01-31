@@ -1,0 +1,61 @@
+body {
+  padding: 4%;
+}
+
+#cy {
+    width: 300px;
+    height: 300px;
+    display: block;
+  }
+
+#title {
+  text-align: center;
+  color: brown;
+  font-weight: bolder;
+  font-size: xx-large;  
+}
+
+#subtitles {
+  font-size: xx-large;
+  margin-bottom: 1%;
+}
+
+input {
+  margin-top:0.5% ;
+}
+
+textarea {
+  width: 20%;
+  height: 60px;
+  margin-top: 0.5%;
+}
+
+#transition-part {
+  display: none;
+}
+
+#accep-start-part {
+  display: none;
+}
+
+#generate-nfa {
+  display: none;
+}
+
+#nfa-display {
+  width: 300px;
+  height: 300px;
+  display: block;
+}
+
+#input-nfa-part {
+  display: none;
+}
+
+p.result {
+  display: inline;
+  margin-left: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+

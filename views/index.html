@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../node_modules/cytoscape/dist/cytoscape.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h3 id="title">StateMachine Simulator: <hr></h3>
+
+  <h3 id="subtitles">States</h3>
+  <label for="states-label">Provide a comma separated list of state names. <br></label>
+  <input type="text" id="states-label">
+
+  <h3 id="subtitles">Alphabet</h4>
+  <label for="alpha-label">Provide a comma separated list of strings to serve as the input alphabet.
+    <br>Each symbol must be exactly one character. <br></label>
+  <input type="text" id="alpha-label">
+
+  <button id="apply-btn">Apply</button>
+  <button id="clear-btn">clear</button>
+
+
+  <div id="transition-part">
+    <h3 id="subtitles">Transitions Function</h4>
+      <label for="transitions-label">Enter a separate line for each transition in this format: origin_state, target, inputs
+         <br></label>
+      <textarea id="transitions-label"></textarea>
+  </div>
+
+  <div id="accep-start-part"></div><br><br>
+
+  <button id="generate-nfa">generate NFA</button>
+
+  <div id="input-nfa-part">
+    <label for="word">Enter a word to compute: </label>
+    <input type="text" id="word">
+    <button id="compute-btn">compute</button>
+    <p class="result"></p>
+  </div>
+
+  <div id="nfa-display"></div>
+  
+</body>
+<script  src="../public/scripts.js"></script>
+</html>
