@@ -15,15 +15,10 @@ Enter transitions like this:
 
 
 a,b,0,1
-
 a,c,0
-
 b,d,0,1
-
 d,b,1
-
 d,a,0
-
 c,d,$
 
 
